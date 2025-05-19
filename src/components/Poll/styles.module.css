@@ -1,0 +1,246 @@
+/* General Container */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    color: white;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.pollTitle {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease;
+}
+
+/* Input Label */
+.label {
+    display: block;
+    font-size: 1.2rem;
+    color: rgb(10, 10, 10);
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea Styling */
+.input,
+.textarea,
+.dateInput,
+.timeInput {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus,
+.dateInput:focus,
+.timeInput:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 86, 179, 0.5);
+}
+
+/* Submit Button */
+.submitButton {
+    padding: 12px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #004494;
+    transform: translateY(-3px);
+}
+
+/* Poll Item */
+.pollItem {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #292929;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.pollItem:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Poll Item Title */
+.pollTitle {
+    font-size: 1.5rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+/* Vote Button */
+.voteButton {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.voteButton:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FOR poll section  */
+
+.containers {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.message {
+    color: #E74C3C;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.pollContainer {
+    border: 1px solid #BDC3C7;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ECF0F1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pollContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pollHeading {
+    color: #2980B9;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.pollDetails {
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.yesButton {
+    background-color: #27AE60;
+    color: #fff;
+}
+
+.noButton {
+    background-color: #E74C3C;
+    color: #fff;
+}
+
+.resultsButton {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.resultsContainer {
+    border: 1px solid #BDC3C7;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ECF0F1;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.resultsHeading {
+    color: #2980B9;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.resultItem {
+    margin: 10px 0;
+    color: #000;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

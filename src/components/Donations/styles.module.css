@@ -1,0 +1,213 @@
+/* Container styling for the entire section */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Add subtle animation for the form appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex and margin utilities */
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.m20 {
+    margin: 20px 0;
+    animation: slideInLeft 0.8s ease-in;
+}
+
+.m10 {
+    margin: 10px 0;
+    animation: slideInLeft 0.8s ease-in;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Input fields */
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    outline: none;
+    animation: pulse 0.6s infinite alternate;
+}
+
+/* Button animations */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: buttonAppear 0.5s ease-in;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Button-specific animations */
+.generate_qr {
+    background-color: #28a745;
+    animation: pulseGreen 1s infinite alternate;
+}
+
+.generate_qr:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.download_now {
+    background-color: #dc3545;
+    animation: pulseRed 1s infinite alternate;
+}
+
+.download_now:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* QR Code and image styling */
+.qr_code {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.get_qr {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.im {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    display: none;
+}
+
+.im:hover {
+    transform: rotate(-10deg);
+}
+
+/* Heading styling */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+/* Keyframes for hover and animations */
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+    }
+}
+
+@keyframes pulseGreen {
+    from {
+        background-color: #28a745;
+    }
+
+    to {
+        background-color: #2ecc71;
+    }
+}
+
+@keyframes pulseRed {
+    from {
+        background-color: #dc3545;
+    }
+
+    to {
+        background-color: #e74c3c;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

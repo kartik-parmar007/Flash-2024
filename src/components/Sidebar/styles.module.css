@@ -1,0 +1,96 @@
+/* styles.module.css */
+
+/* General box styles */
+.sidebarContainer {
+    height: 100vh;
+    border-right: 1px solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    /* whiteAlpha.300 equivalent */
+    padding: 2rem 1rem;
+    /* Equivalent to py={8} px={{ base: 2, md: 4 }} */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.hamburgerMenuButton {
+    padding: 0.5rem;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 10;
+    color: white;
+    border-color: white;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.linkContainer {
+    padding-left: 0.5rem;
+    cursor: pointer;
+}
+
+.hoverEffect {
+    background: rgba(255, 255, 255, 0.2);
+    /* whiteAlpha.200 equivalent */
+    width: 2.5rem;
+    /* 10 */
+}
+
+.logoutContainer {
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: auto;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.logoutHoverEffect {
+    background: rgba(255, 255, 255, 0.4);
+    /* whiteAlpha.400 equivalent */
+    border-radius: 0.375rem;
+    /* 6px */
+}
+
+.hideOnMobile {
+    display: none;
+}
+
+.showOnMobile {
+    display: block;
+}
+
+.hideOnDesktop {
+    display: none;
+}
+
+.showOnDesktop {
+    display: block;
+}
+
+/* Media query for responsive design */
+@media (min-width: 768px) {
+    .hideOnDesktop {
+        display: block;
+    }
+
+    .showOnDesktop {
+        display: none;
+    }
+
+    .sidebarContainer {
+        display: block;
+    }
+
+    .hamburgerMenuButton {
+        display: none;
+    }
+}

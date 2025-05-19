@@ -1,0 +1,126 @@
+/* General Container */
+.container {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Box */
+.searchBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* Weather Card */
+.weatherCard {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weatherCard h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.weatherInfo {
+    margin-top: 20px;
+}
+
+.temperature {
+    font-size: 3em;
+    font-weight: 700;
+    color: #ff6f61;
+}
+
+.details p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.details strong {
+    color: #333;
+}
+
+/* Forecast Section */
+.forecast {
+    margin-top: 30px;
+}
+
+.forecast h3 {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.forecastList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.forecastItem {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.forecastItem p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.forecastItem strong {
+    color: #007bff;
+}
+
+/* Loading and Error States */
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}

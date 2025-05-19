@@ -1,0 +1,232 @@
+/* Container Styling */
+.container {
+    padding: 40px;
+    /* max-width: 900px; */
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    /* Clean white background */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.Heading {
+    margin-bottom: auto;
+    color: white;
+    margin-top: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading Styling */
+.heading {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #3498db;
+    /* Light Blue */
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Styling */
+.form {
+    color: rgb(237, 237, 237);
+    display: grid;
+    gap: 20px;
+    background-color: #000000;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin-bottom: 40px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* .form:hover { */
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
+    /* Hover shadow for interactivity */
+/* } */
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #000000;
+    /* Set input and textarea background to white */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+}
+
+.form input:hover,
+.form textarea:hover {
+    border: 1px solid #3498db;
+    /* Light Blue border on hover */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    /* Soft light blue shadow */
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 1px solid #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    /* Blue outline on focus */
+}
+
+/* Button Styling */
+button {
+    /* background-color: rgb(255, 33, 33); */
+    padding: 15px 25px;
+    /* background-color: #3498db; */
+    /* Light blue */
+    color: white;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Subheading Styling */
+.subheading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3498db;
+    /* Light blue color */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.MainHeading {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+/* Event List Grid */
+.eventList {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Event Card Styling */
+.eventCard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.eventCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Lift effect on hover */
+}
+
+.eventCard h3 {
+    font-size: 1.8rem;
+    color: #3498db;
+    /* Light blue for headings */
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.eventCard p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    /* Light grey text for description */
+}
+
+/* Share Button Styling */
+.shareButton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #2980b9;
+    /* Darker blue */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s ease;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.shareButton:hover {
+    background-color: #1f6392;
+    /* Even darker blue */
+    transform: scale(1.05);
+}
+
+/* Add a subtle gradient to buttons and input focus */
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.6);
+    /* Focus blue shadow */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 2.4rem;
+    }
+
+    .form input,
+    .form textarea {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    .subheading {
+        font-size: 1.6rem;
+    }
+
+    .eventCard {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"  # Maps port 5173 on your machine to port 5173 on the container
+    env_file:
+      - .env  # If using environment variables
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
